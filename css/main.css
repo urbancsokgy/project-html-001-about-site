@@ -2,3 +2,79 @@
 *{ 
     box-sizing: border-box;
 }
+html{height: 100%;
+   
+}
+body
+{
+    
+    margin: 0 0;
+    background: rgb(84,84,93); 
+    background: linear-gradient(43deg, rgba(84,84,93,1) 0%, rgba(181,181,195,1) 35%, rgba(219,222,231,1) 80%, rgba(121,131,133,0.8211484422870711) 100%) ; 
+}
+.container{    
+    max-width: 800px;
+    margin:0 auto;
+    padding: 0 1em 1em 1em;
+    background: url('../img/bg-body.jpg');
+    background-size: cover;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "title title title title"
+    "content content content aside"
+    "footitle  footitle footitle footitle "    ;
+   }
+   .title  { grid-area: title }
+   .navi  { grid-area: navi }
+   .content  { grid-area: content }
+   .aside  { grid-area: aside }
+   .footitle {grid-area:  footitle;}
+   .nav{grid-area: navi1;}
+
+.intitle, .infootitle {
+       display: grid;
+       grid-template-columns: repeat(4, 1fr);   
+   }
+
+ header h1{
+    
+    grid-column: span 1;
+    background-color: tomato;
+}
+footer h1{
+    grid-column: span 1;
+    background-color: tomato;
+}
+
+.navi1, .navia{
+    background-color:rgba(0,128,128 ,.5 );
+    grid-column: span 3;
+}
+
+h1, h2{
+    margin: 0;
+    padding: .2em;
+}
+
+
+/* Navigáció formázása */
+nav ul a{
+    color: white;
+    list-style: none;
+    align-content: flex-end;
+}
+nav ul li{
+    display: inline;  
+}
+nav a{
+    padding: 0.5em;
+    text-decoration: none;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
