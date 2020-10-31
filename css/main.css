@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,500&display=swap');
 *{ 
     box-sizing: border-box;
 }
@@ -7,13 +7,15 @@ html{height: 100%;
 }
 body
 {
-    
+    font-family: 'Roboto', sans-serif;    
     margin: 0 0;
     background: rgb(84,84,93); 
     background: linear-gradient(43deg, rgba(84,84,93,1) 0%, rgba(181,181,195,1) 35%, rgba(219,222,231,1) 80%, rgba(121,131,133,0.8211484422870711) 100%) ; 
 }
+p{font-size: 1em;}
+/* Befogalaló grid*/
 .container{    
-    max-width: 800px;
+    max-width: 90%;
     margin:0 auto;
     padding: 0 1em 1em 1em;
     background: url('../img/bg-body.jpg');
@@ -40,9 +42,12 @@ body
    }
 
  header h1{
-    
+    font-weight: 400;
     grid-column: span 1;
     background-color: tomato;
+}
+article p{
+    font-weight: 100;
 }
 footer h1{
     grid-column: span 1;
@@ -60,6 +65,7 @@ h1, h2{
 }
 
 
+
 /* Navigáció formázása */
 nav ul a{
     color: white;
@@ -73,8 +79,39 @@ nav a{
     padding: 0.5em;
     text-decoration: none;
 }
+nav a:hover{
+    background:  rgba(255,255,255 ,.5 )
+}
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
+}
+.top{
+    margin: 1em;
+    border-radius: 5px;
+    background-color: tomato;
+}
+/* KÉt nagy kép formázása */
+.images{
+    width: 100%;
+}
+img{display: block;
+    padding: 5%;
+    margin: .4em auto;
+    max-width: 90%;
+    box-shadow: 2px 2px 10px  rgba(255,255,255 ,.5 ) ;
+}
+/*3 box*/
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.boxes article{
+    background:  rgba(255,255,255 ,.5 );
+    padding: 4%;    
+}
+.boxes article p{
+    font-weight: 100;    
 }
