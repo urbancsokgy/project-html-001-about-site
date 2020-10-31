@@ -8,8 +8,8 @@
     <meta name="keywords" content="programozás, feladat, project-html-001-about-site ">
     <meta name="robots" content="index, follow">
     <META name="Author" content="URbancsok Győző">
-    <title>Home meinsingapore</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>About</title>
+    <link rel="stylesheet" type="text/css" href="css/main_about.css">
 
 </head>
 
@@ -18,54 +18,87 @@
     <div class="container" id="top">
         <header class="title intitle">
             <h1>Címem</h1>
-                <nav class="navia">
-                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="works.html">Works</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="about.html">About</a></li>
-                    </ul>
-                </nav>       
+            <nav class="navia">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
         </header>
-    
+
         <section class="content">
             <article>
-                <h2>Tartalom</h2>
-                <p>EEz valami tartalomEz valami tartalomEz valami tartalomEz valami tartalomEz valami tartalomEz valami
-                    tartalomz valami tartalom</p>
-                <p>
-                    The standard Lorem Ipsum passage, used since the 1500s
-                    
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                    Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-                    
-                    nslation by H. Rackham
-                    
-                    "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
-                    </p>
+                <img class="clearfix" src="img/halas.jpg" alt="">
+
+                <h2>Magamról:</h2>
+                <p>URbancsok Győző vagyok. Tanárként dolgozom, immár 30 éve. Három diplomám van:
+                </p>
+                <ol>
+                    <li>Általános iskolai tanító</li>
+                    <li>Informatika tanár</li>
+                    <li>Etika tanár</li>
+                </ol>
+                <p>A tanári pálya előtt és mellett, az évek során, megtanultam néhány szakmát is.</p>
+                <ul>
+                    <li>Nyomdai retusőr</li>
+                    <li>Könyvtár asszisztens</li>
+                    <li>CNC forgácsoló</li>
+                    <li>CAD- CAM informatikus</li>
+                </ul>
+                <p>Az utóbbi képzés első évében programozási és a rendszergazdai feladatok elsajátítása is a tananyag
+                    része. A tanulás során részfeladatként elkészítettem egy-egy olyan megoldást ami a programozással
+                    kapcsolatban felfrissítette az emlékeimet a programozás alapjaival kapcsolatban, ill. azt a képzetet
+                    erősítette bennem, hogy bármit meg tudok tanulni. Ebben a feladatban ez most nem igazán tükröződik.
+                    Sajnos a layout-ban eléggé bekavarodtam, a megfelelő töréseket nem sikerült szabályozni. Most
+                    ennyire futotta.</p>
+
+
+
             </article>
+            <div class="form">
+                <fieldset>
+                    <legend>Küldj egy üzenetet!</legend>
+                    <form id="myForm" action="" method="GET">
+                        <label for="name">Név:</label>
+                        <input id="name" type="text" name="name" minlength="5"><br>
+
+                        <label for="email">Email cím:</label>
+                        <input id="email" type="email" name="email"><br>
+
+                        <label id="label" for="message">Üzenet:</label>
+                        <textarea id="message" name="message" minlength="20" rows="3" cols="50"></textarea>
+                        <input id="submit" type="submit" name=""><br>
+        <!-- <script>
+                function myFunction() {
+                var text = document.getElementById('message').value;
+                                    if (text.length > 20) {
+                 document.getElementById("myForm").submit();
+                                 
+                 }
+          
+        </script> -->                    
+                    </form>
+                </fieldset>
+            </div>
         </section>
-    
-        <div class="aside">
-            <aside>
-                <h2>aside része</h2>
-            </aside>
-        </div>
-    
+
+
         <footer class="footitle infootitle">
             <h1>Lábléc</h1>
-        
-        <nav class="navi1">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="works.html">Works</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="about.html">About</a></li>
-                <li ><a class="top" href="#top">Top</a></li>
-            </ul>
-        </nav>
+
+            <nav class="navi1">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="top" href="#top">Top</a></li>
+                </ul>
+            </nav>
         </footer>
-    
+
     </div>
 </body>
 
