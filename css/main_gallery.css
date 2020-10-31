@@ -120,9 +120,24 @@ img{
     display: block;
     content: "";
     margin: 10px;
-    flex: 999 999 auto;
+    /* flex: 999 999 auto; */
   }
   .item {
     flex: 1 1 auto;
     margin: 10px;
   }
+  @media screen and (max-width: 600px) {
+    .container1 {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: auto;
+        align-content: start
+      }
+    .item {    
+    flex: 2 1 auto;
+    margin: 10px;
+    align-self: auto
+    }
