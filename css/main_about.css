@@ -14,6 +14,9 @@ body
     background: linear-gradient(43deg, rgba(84,84,93,1) 0%, rgba(181,181,195,1) 35%, rgba(219,222,231,1) 80%, rgba(121,131,133,0.8211484422870711) 100%) ; 
 }
 p{font-size: 1em;}
+.content{
+    max-width: 90vw;
+}
 /* Befogalaló grid*/
 .container{    
     max-width: 100%;
